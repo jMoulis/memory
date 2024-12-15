@@ -1,5 +1,15 @@
 // script.js
 
+/**
+ * Création d'un jeu de mémoire simple
+ * Etapes principales dans l'ordre:
+ * 1. Sélectionner les éléments du DOM
+ * 2. Initialiser les variables du jeu
+ * 3. Créer les fonctions du jeu
+ * 4. Ajouter les écouteurs d'événements
+ * 5. Démarrer le jeu pour la première fois
+ */
+
 // Initialisation du jeu
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Le DOM est chargé !');
@@ -242,5 +252,5 @@ document.addEventListener('DOMContentLoaded', () => {
   difficultySelector.addEventListener('change', startGame);
 
   // Démarrer le jeu pour la première fois
-  startGame();
+  // startGame();
 });
