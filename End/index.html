@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu de Mémoire</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jeu de Mémoire</h1>
+      <div id="difficulty-selector">
+        <label for="difficulty">Niveau :</label>
+        <select id="difficulty">
+          <option value="4">Facile (4x4)</option>
+          <option value="6">Moyen (6x6)</option>
+          <option value="8">Difficile (8x8)</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-container">
+        <!-- Les cartes seront ajoutées ici -->
+      </div>
+      <div id="game-info">
+        <p>Mouvements : <span id="move-counter">0</span></p>
+        <p>Temps Écoulé : <span id="timer">0</span> sec</p>
+        <p id="victory-message" style="display: none">
+          Félicitations ! Vous avez gagné !
+        </p>
+        <button id="restart-button" style="display: none">Rejouer</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+/* styles.css */
+
+/* Style de base */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+#difficulty-selector {
+}
+
+#difficulty-selector label,
+#difficulty-selector select {
+}
+
+#game-container {
+}
+
+.card {
+}
+
+.card.flipped {
+}
+
+#game-info {
+}
+
+#restart-button {
+}
+
+/* Styles supplémentaires pour le message de victoire */
+#victory-message {
+}

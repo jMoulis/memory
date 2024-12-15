@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Style de base */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+#difficulty-selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#difficulty-selector label,
+#difficulty-selector select {
+  font-size: 16px;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* Par défaut, ajusté via JS */
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #4caf50; /* Couleur de face cachée */
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: transparent; /* Texte caché */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card.flipped {
+  background-color: #ffffff; /* Couleur de face révélée */
+  color: #000000; /* Texte visible */
+}
+
+#game-info {
+  margin-top: 20px;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styles supplémentaires pour le message de victoire */
+#victory-message {
+  font-size: 24px;
+  color: #4caf50;
+}
