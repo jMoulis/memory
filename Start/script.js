@@ -8,6 +8,7 @@
  * 3. Créer les fonctions du jeu
  * 4. Ajouter les écouteurs d'événements
  * 5. Démarrer le jeu pour la première fois
+ *
  */
 
 // Initialisation du jeu
@@ -95,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
     gameContainer.style.gridTemplateColumns = `repeat(${gridSize}, 100px)`;
 
     // Calculer le nombre de paires requises
-    // @link https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/arithmetic_operators#Division
     const requiredPairs = (gridSize * gridSize) / 2;
 
     // Vérifier qu'il y a suffisamment de symboles disponibles
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function shuffle(array) {
     /**
      * A faire : Mélanger les cartes (indice de 0.5)
-     * @link https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+     *
      *
      */
     return [];

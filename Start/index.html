@@ -10,34 +10,29 @@
     <header>
       <h1>Jeu de Mémoire</h1>
       <div id="difficulty-selector">
-        <!-- Créer la gestion de niveau -->
-        <!-- Ajouter un label pour le select -->
         <label for="difficulty">Niveau :</label>
-        <!-- Créer le select avec les différentes options -->
         <select id="difficulty">
-          <!-- @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select-->
-          <!-- 3 options niveaux facile value:4, moyen value:6, difficile: value 8-->
+          <option value="4">Facile (4x4)</option>
+          <option value="6">Moyen (6x6)</option>
+          <option value="8">Difficile (8x8)</option>
         </select>
       </div>
     </header>
 
     <main>
       <div id="game-container">
-        <!-- Les cartes seront ajoutées ici par javascript -->
+        <!-- Les cartes seront ajoutées ici -->
       </div>
       <div id="game-info">
-        <!-- Créer le counter de mouvements-->
         <p>Mouvements : <span id="move-counter">0</span></p>
-        <!-- Créer le timer -->
         <p>Temps Écoulé : <span id="timer">0</span> sec</p>
-        <!-- Créer le message de victoire -->
         <p id="victory-message" style="display: none">
           Félicitations ! Vous avez gagné !
         </p>
-        <!-- Créer le bouton pour rejouer -->
         <button id="restart-button" style="display: none">Rejouer</button>
       </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
