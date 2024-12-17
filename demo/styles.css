@@ -1,0 +1,19 @@
+h1 {
+  font-weight: bold;
+}
+#marcel {
+  font-size: 40px;
+}
+.subtitle {
+  color: red;
+}
+.marcel {
+  color: blue;
+}
+.title {
+  text-decoration: underline;
+  &:hover {
+    color: red;
+    transform: rotate(180deg);
+  }
+}
